@@ -1,0 +1,6 @@
+RonBurgundy = {
+  librarySmell: function () {
+    var case = 'rich mahogany';
+    return case;
+  }
+};
