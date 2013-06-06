@@ -8,7 +8,7 @@
   <%= text_field_tag(:zebras) %>
 </p>
 <p>
-  <%= button_tag('What does my library smell like?', id: :library) %>
+  <%= button_tag('What does my apartment smell like?', id: :library) %>
 </p>
 <%= javascript_tag do %>
   $('#converter').click(function () {
@@ -16,6 +16,6 @@
     $('#zebras').val(Weight.convertToZebras($('#kilograms').val()));
   });
   $('#library').click(function () {
-    window.alert(RonBurgundy.librarySmell())
+    window.alert(RonBurgundy.apartmentSmell())
   });
 <% end %>

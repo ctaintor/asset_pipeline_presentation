@@ -1,5 +1,5 @@
 RonBurgundy = {
-  librarySmell: function () {
+  apartmentSmell: function () {
     var case = 'rich mahogany';
     return case;
   }
