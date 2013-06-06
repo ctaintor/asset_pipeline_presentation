@@ -4,16 +4,16 @@
   <%= button_tag("Convert", id: :converter) %>
   <%= label_tag(:giraffes, "Giraffes") %>
   <%= text_field_tag(:giraffes) %>
-  <!--<%= label_tag(:zebras, "Zebras") %>-->
-  <!--<%= text_field_tag(:zebras) %>-->
+  <%= label_tag(:zebras, "Zebras") %>
+  <%= text_field_tag(:zebras) %>
 </p>
 <p>
-  <!--<%= button_tag('What does my library smell like?', id: :library) %>-->
+  <%= button_tag('What does my library smell like?', id: :library) %>
 </p>
 <%= javascript_tag do %>
   $('#converter').click(function () {
     $('#giraffes').val(Weight.convertToGiraffes($('#kilograms').val()));
-    //$('#zebras').val(Weight.convertToZebras($('#kilograms').val()));
+    $('#zebras').val(Weight.convertToZebras($('#kilograms').val()));
   });
   $('#library').click(function () {
     window.alert(RonBurgundy.librarySmell())
